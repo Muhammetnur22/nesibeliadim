@@ -1,0 +1,31 @@
+@import './init.scss';
+// About section
+#about{
+    padding-top: 150px;
+    .about-text{
+        padding-bottom: 50px;
+        .about-header{
+            color: #487EE6;
+            font-family: Avenir-bold;
+            font-size: 5vh;
+            padding-bottom: 30px;
+            
+        }
+        p{
+            color: $fontSecond;
+            font-size: 24px;
+        }
+        
+    }
+    .about-img-wrapper{
+        width: 100%;
+        .img{
+            width: 100%;
+            img{
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+    
+}

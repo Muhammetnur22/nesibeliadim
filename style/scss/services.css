@@ -1,0 +1,72 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir/avenirnextcyr-regular.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Bold;
+  src: url("../fonts/Avenir/avenirnextcyr-bold.ttf");
+}
+
+#services {
+  padding-top: 150px;
+}
+
+#services .services-text {
+  margin-bottom: 40px;
+}
+
+#services .services-text h1 {
+  color: #487EE6;
+  font-family: Avenir-Bold;
+  font-size: 5vh;
+}
+
+#services .service-wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+}
+
+#services .service-wrapper .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 230px;
+}
+
+#services .service-wrapper .service .service-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  min-height: 60px;
+  margin-bottom: 20px;
+}
+
+#services .service-wrapper .service .img-wrapper {
+  padding: 1rem 0;
+  margin-bottom: 20px;
+}
+
+#services .service-wrapper .service p {
+  min-height: 60px;
+  color: #9FA0A4;
+  font-size: 1rem;
+}
+
+#services .service-wrapper .l-service {
+  -ms-grid-column-align: end;
+      justify-self: end;
+}
+/*# sourceMappingURL=services.css.map */

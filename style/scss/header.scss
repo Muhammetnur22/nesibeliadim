@@ -1,0 +1,100 @@
+@import './init.scss';
+
+// Header Section
+header{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 1rem 0;
+    z-index: 1000;
+    transition: 0.5s;
+    // box-shadow: none;
+
+    nav{
+        width: 95%;
+        max-width: 1200px;
+        display: flex;
+        margin: auto auto;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+        @include tablet-mini{
+            padding: 10px;
+        }
+
+        a.logo-handler{
+            height: 70px;
+            @include tablet{
+                height: 50px;
+            }
+            img{
+                height: 100%;
+            }
+        }
+        .mobile-hamburger-wrapper {
+            display: none;
+            cursor: pointer;
+
+            @include tablet-mini{
+                display: block;
+                
+            }
+        }
+        ul{
+            display: flex;
+            @include tablet-mini{
+                display: none;
+            }
+            li{
+                list-style: none;
+                margin-left: 60px;
+                font-size: 18px;
+                @include tablet{
+                    font-size: 15px;
+                }
+                a {
+                    text-decoration: none;
+                    color:$fontSecond;
+                    
+                }
+            }
+            .lang-dropdown{
+                position: relative;
+                cursor: pointer;
+
+                .chosen-lang{
+                    font-weight: 900;
+                    padding: 5px;
+                    &::selection { background: none; }
+                }
+                
+                .modal{
+                    display: none;
+                    flex-direction: column;
+                    align-items: center;
+                    position: absolute;
+                    left: -10px;
+                    top: 30px;
+                    width: 60px;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: 0 10px 10px rgba(66, 66, 66, 0.157);
+                    padding: 0.5rem 0;
+                    &::selection { background: none; }
+                    a{
+                        padding: 1rem;
+                        color: $fontFirst;
+                        width: 100%;
+                        &:hover{
+                            color: $primaryColor;
+                        }
+                        &::selection { background: none; }
+                    }  
+                }
+                .active{
+                    display: flex;
+                }
+            }
+        }
+    }
+}

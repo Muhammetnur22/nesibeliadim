@@ -1,0 +1,100 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir/avenirnextcyr-regular.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Bold;
+  src: url("../fonts/Avenir/avenirnextcyr-bold.ttf");
+}
+
+#contacts {
+  padding-top: 150px;
+}
+
+#contacts .contacts-text {
+  margin-bottom: 50px;
+}
+
+#contacts .contacts-text h1 {
+  color: #487EE6;
+  font-family: Avenir-Bold;
+  font-size: 5vh;
+}
+
+#contacts .contact-wrapper {
+  width: 100%;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.3rem;
+}
+
+#contacts .contact-wrapper .contact-left {
+  width: 45%;
+}
+
+#contacts .contact-wrapper .contact-left .contact-left-img-wrapper {
+  width: 100%;
+}
+
+#contacts .contact-wrapper .contact-left .contact-left-img-wrapper img {
+  width: 80%;
+}
+
+#contacts .contact-wrapper .contact-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 55%;
+}
+
+#contacts .contact-wrapper .contact-right .f-1 {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contacts .contact-wrapper .contact-right .f-1 .address {
+  padding-bottom: 5rem;
+}
+
+#contacts .contact-wrapper .contact-right .f-1 .mail {
+  min-height: 60px;
+}
+
+#contacts .contact-wrapper .contact-right .f-2 {
+  width: 50%;
+  padding-left: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#contacts .contact-wrapper .contact-right img {
+  padding-bottom: 20px;
+}
+
+#contacts .contact-wrapper .contact-right p {
+  padding-bottom: 10px;
+}
+/*# sourceMappingURL=contacts.css.map */

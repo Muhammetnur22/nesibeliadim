@@ -1,0 +1,44 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir/avenirnextcyr-regular.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Bold;
+  src: url("../fonts/Avenir/avenirnextcyr-bold.ttf");
+}
+
+#about {
+  padding-top: 150px;
+}
+
+#about .about-text {
+  padding-bottom: 50px;
+}
+
+#about .about-text .about-header {
+  color: #487EE6;
+  font-family: Avenir-bold;
+  font-size: 5vh;
+  padding-bottom: 30px;
+}
+
+#about .about-text p {
+  color: #9FA0A4;
+  font-size: 24px;
+}
+
+#about .about-img-wrapper {
+  width: 100%;
+}
+
+#about .about-img-wrapper .img {
+  width: 100%;
+}
+
+#about .about-img-wrapper .img img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+/*# sourceMappingURL=about.css.map */

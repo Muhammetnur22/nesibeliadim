@@ -1,0 +1,27 @@
+@import './init.scss';
+// Countries
+#countries{
+    padding-top: 150px;
+    .countries-text{
+        margin-bottom: 40px;
+        h1{
+            color: $primaryColor;
+            font-family: Avenir-Bold;
+            font-size: 5vh;
+        }
+    }
+    .countries-wrapper{
+        display: flex;
+        justify-content: space-between;
+        .country{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            p{
+                color: $fontFirst;
+                font-weight: 800;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}

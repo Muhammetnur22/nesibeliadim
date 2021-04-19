@@ -1,0 +1,15 @@
+// Footer Section
+footer{
+    display: flex;
+    justify-content: center;
+    margin: 120px 0 40px;
+    .geekspace{
+        display: flex;
+        align-items: center;
+        .footer-title{
+            font-weight: 900;
+            margin-right: 20px;
+            font-size: 1rem;
+        }
+    }
+}

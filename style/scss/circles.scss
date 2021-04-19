@@ -1,0 +1,36 @@
+@import './init.scss';
+
+// Circles
+.circles{
+    .circle{
+        border-radius: 50%;
+        background-color: $primaryColor;
+        opacity: 0.25;
+        position: absolute;
+        z-index: -1;
+    }
+    .one{
+        width: 32vh;
+        height: 32vh;
+        top: 60vh;
+        left: 100px;
+    }
+    .two{
+        width: 25vh;
+        height: 25vh;
+        top: 40vh;
+        left: -90px;
+    }
+    .three, .four{
+        width: 15vh;
+        height: 15vh;
+    }
+    .three{
+        top: 25vh;
+        left: 120px; 
+    }
+    .four{
+        top: 15vh;
+        left: -74px; 
+    }
+}

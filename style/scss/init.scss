@@ -1,0 +1,38 @@
+// COLORS
+$primaryColor : #487EE6;
+$secondaryColor : #F1F3F8;
+$fontFirst : #313640;
+$fontSecond : #9FA0A4;
+
+$mobile : 425px;
+$tablet-mini : 680px;
+$tablet : 870px;
+
+
+// responsive name : desktop
+@mixin tablet {
+   @media (max-width: #{$tablet}) {
+      @content;
+   }
+}
+// responsive name : tablet-mini
+@mixin tablet-mini {
+   @media (max-width: #{$tablet-mini}) {
+      @content;
+   }
+}
+// responsive name : mobile
+@mixin mobile {
+   @media (max-width: #{$mobile}) {
+      @content;
+   }
+}
+
+@font-face {
+    font-family: Avenir;
+    src: url('../fonts/Avenir/avenirnextcyr-regular.ttf');
+}
+@font-face {
+    font-family: Avenir-Bold;
+    src: url('../fonts/Avenir/avenirnextcyr-bold.ttf');
+}

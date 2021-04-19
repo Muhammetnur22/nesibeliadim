@@ -1,0 +1,57 @@
+// Initialization
+@import './init.scss';
+
+// Header section
+@import './header.scss';
+
+// Landing section
+@import './landing.scss';
+
+// Circles
+@import './circles.scss';
+
+// About section
+@import './about.scss';
+
+// Countries section
+@import './countries.scss';
+
+// Services section
+@import './services.scss';
+
+// Contacts section
+@import './contacts.scss';
+
+// Footer section
+@import './footer.scss';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Avenir ;
+    color: $fontFirst;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+
+.container{
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+//Keyframes
+@keyframes mover{
+
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}

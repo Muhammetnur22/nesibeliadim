@@ -1,0 +1,53 @@
+@import './init.scss';
+
+
+// Landing Header
+.landing{
+    height: 100vh;
+    min-height: 700px;
+    position: relative;
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 50vh;
+        height: 50vh;
+        .left{
+            width: 55%;
+            h1{
+                font-size: 8vh;
+                font-family: Avenir-Bold;
+                color: $fontFirst;
+                margin-bottom: 50px ;
+                
+            }
+            p{
+                font-size: 24px;
+                color: $fontSecond;
+            }
+        }
+        .right{
+            width: 45%;
+            height: 70vh;
+            .picture-handler{
+                height: 100%;
+                img{
+                    height: 100%;
+                }
+                
+            }
+        }   
+    }
+    .down{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: 50px;
+        height: 30px;
+
+        img{
+            animation: mover 1.5s infinite alternate;
+        }
+    } 
+}

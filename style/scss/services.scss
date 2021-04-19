@@ -1,0 +1,50 @@
+@import './init.scss';
+
+
+// Services section
+#services{
+    padding-top: 150px;
+    .services-text{
+        margin-bottom: 40px;
+        h1{
+            color: $primaryColor;
+            font-family: Avenir-Bold;
+            font-size: 5vh;
+        }
+    }
+    .service-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        // grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 20px;
+
+        .service{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 230px;
+
+            .service-title{
+                font-size: 1.5rem;
+                font-weight: bold;
+                min-height: 60px;
+                margin-bottom: 20px;
+            }
+
+            .img-wrapper{
+                padding: 1rem 0;
+                margin-bottom: 20px;
+            }
+            p{
+                min-height: 60px;
+                color: $fontSecond;
+                font-size: 1rem;
+            }
+        }
+        .l-service{
+            justify-self: end;
+        }
+
+    }
+}

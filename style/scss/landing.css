@@ -1,0 +1,77 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir/avenirnextcyr-regular.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Bold;
+  src: url("../fonts/Avenir/avenirnextcyr-bold.ttf");
+}
+
+.landing {
+  height: 100vh;
+  min-height: 700px;
+  position: relative;
+}
+
+.landing .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 50vh;
+  height: 50vh;
+}
+
+.landing .header .left {
+  width: 55%;
+}
+
+.landing .header .left h1 {
+  font-size: 8vh;
+  font-family: Avenir-Bold;
+  color: #313640;
+  margin-bottom: 50px;
+}
+
+.landing .header .left p {
+  font-size: 24px;
+  color: #9FA0A4;
+}
+
+.landing .header .right {
+  width: 45%;
+  height: 70vh;
+}
+
+.landing .header .right .picture-handler {
+  height: 100%;
+}
+
+.landing .header .right .picture-handler img {
+  height: 100%;
+}
+
+.landing .down {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 50px;
+  height: 30px;
+}
+
+.landing .down img {
+  -webkit-animation: mover 1.5s infinite alternate;
+          animation: mover 1.5s infinite alternate;
+}
+/*# sourceMappingURL=landing.css.map */

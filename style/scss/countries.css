@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Avenir;
+  src: url("../fonts/Avenir/avenirnextcyr-regular.ttf");
+}
+
+@font-face {
+  font-family: Avenir-Bold;
+  src: url("../fonts/Avenir/avenirnextcyr-bold.ttf");
+}
+
+#countries {
+  padding-top: 150px;
+}
+
+#countries .countries-text {
+  margin-bottom: 40px;
+}
+
+#countries .countries-text h1 {
+  color: #487EE6;
+  font-family: Avenir-Bold;
+  font-size: 5vh;
+}
+
+#countries .countries-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#countries .countries-wrapper .country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#countries .countries-wrapper .country p {
+  color: #313640;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+/*# sourceMappingURL=countries.css.map */
