@@ -8,6 +8,12 @@
   src: url("../fonts/Avenir/avenirnextcyr-bold.ttf");
 }
 
+@media (max-width: 870px) {
+  .circles {
+    display: none;
+  }
+}
+
 .circles .circle {
   border-radius: 50%;
   background-color: #487EE6;

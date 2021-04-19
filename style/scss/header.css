@@ -66,54 +66,68 @@ header nav .mobile-hamburger-wrapper {
   }
 }
 
-header nav ul {
+header nav .info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (max-width: 680px) {
-  header nav ul {
-    display: none;
+  header nav .info {
+    display: block;
+    width: 100%;
+    height: calc(100vh - 100px);
+    position: fixed;
+    right: 0;
+    bottom: 0px;
+    background-color: white;
   }
 }
 
-header nav ul li {
+header nav .info li {
   list-style: none;
   margin-left: 60px;
   font-size: 18px;
 }
 
+@media (max-width: 680px) {
+  header nav .info li {
+    display: block;
+    padding: 3rem 0;
+    text-align: center;
+  }
+}
+
 @media (max-width: 870px) {
-  header nav ul li {
+  header nav .info li {
     font-size: 15px;
   }
 }
 
-header nav ul li a {
+header nav .info li a {
   text-decoration: none;
   color: #9FA0A4;
 }
 
-header nav ul .lang-dropdown {
+header nav .info .lang-dropdown {
   position: relative;
   cursor: pointer;
 }
 
-header nav ul .lang-dropdown .chosen-lang {
+header nav .info .lang-dropdown .chosen-lang {
   font-weight: 900;
   padding: 5px;
 }
 
-header nav ul .lang-dropdown .chosen-lang::-moz-selection {
+header nav .info .lang-dropdown .chosen-lang::-moz-selection {
   background: none;
 }
 
-header nav ul .lang-dropdown .chosen-lang::selection {
+header nav .info .lang-dropdown .chosen-lang::selection {
   background: none;
 }
 
-header nav ul .lang-dropdown .modal {
+header nav .info .lang-dropdown .modal {
   display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -132,33 +146,33 @@ header nav ul .lang-dropdown .modal {
   padding: 0.5rem 0;
 }
 
-header nav ul .lang-dropdown .modal::-moz-selection {
+header nav .info .lang-dropdown .modal::-moz-selection {
   background: none;
 }
 
-header nav ul .lang-dropdown .modal::selection {
+header nav .info .lang-dropdown .modal::selection {
   background: none;
 }
 
-header nav ul .lang-dropdown .modal a {
+header nav .info .lang-dropdown .modal a {
   padding: 1rem;
   color: #313640;
   width: 100%;
 }
 
-header nav ul .lang-dropdown .modal a:hover {
+header nav .info .lang-dropdown .modal a:hover {
   color: #487EE6;
 }
 
-header nav ul .lang-dropdown .modal a::-moz-selection {
+header nav .info .lang-dropdown .modal a::-moz-selection {
   background: none;
 }
 
-header nav ul .lang-dropdown .modal a::selection {
+header nav .info .lang-dropdown .modal a::selection {
   background: none;
 }
 
-header nav ul .lang-dropdown .active {
+header nav .info .lang-dropdown .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

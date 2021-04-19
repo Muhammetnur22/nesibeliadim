@@ -12,27 +12,52 @@
         align-items: center;
         padding-top: 50vh;
         height: 50vh;
+        @include tablet{
+            display: block;
+            padding-top: 20vh;
+        }
         .left{
             width: 55%;
+            @include tablet{
+                width: 100%;
+            }
+            
             h1{
                 font-size: 8vh;
                 font-family: Avenir-Bold;
                 color: $fontFirst;
-                margin-bottom: 50px ;
-                
+                margin-bottom: 50px;
+               
             }
             p{
                 font-size: 24px;
                 color: $fontSecond;
+                @include tablet{
+                    font-size: 20px;
+                }
             }
         }
         .right{
             width: 45%;
             height: 70vh;
+            @include tablet{
+                margin-top: 3rem;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
             .picture-handler{
                 height: 100%;
+                @include tablet{
+                    width: 100%;
+                    height: auto;
+                }
                 img{
                     height: 100%;
+                    @include tablet{
+                        width: 100%;
+                        height: auto;
+                    }
                 }
                 
             }

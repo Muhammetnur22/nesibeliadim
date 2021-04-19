@@ -30,7 +30,12 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  gap: 20px;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper {
+    display: block;
+  }
 }
 
 #services .service-wrapper .service {

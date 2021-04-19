@@ -2,6 +2,9 @@
 
 // Circles
 .circles{
+    @include tablet{
+        display: none;
+    }
     .circle{
         border-radius: 50%;
         background-color: $primaryColor;

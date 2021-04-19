@@ -43,7 +43,13 @@
 }
 
 #contacts .contact-wrapper .contact-left .contact-left-img-wrapper img {
-  width: 80%;
+  width: 70%;
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-left {
+    display: none;
+  }
 }
 
 #contacts .contact-wrapper .contact-right {
@@ -51,6 +57,14 @@
   display: -ms-flexbox;
   display: flex;
   width: 55%;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right {
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 
 #contacts .contact-wrapper .contact-right .f-1 {
@@ -77,7 +91,7 @@
 
 #contacts .contact-wrapper .contact-right .f-2 {
   width: 50%;
-  padding-left: 5rem;
+  padding-left: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

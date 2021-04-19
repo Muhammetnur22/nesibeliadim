@@ -16,9 +16,11 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        // grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 20px;
 
+        @include tablet{
+            display: block;
+        }
+        
         .service{
             display: flex;
             flex-direction: column;

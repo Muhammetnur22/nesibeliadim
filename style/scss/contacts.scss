@@ -24,13 +24,21 @@
             .contact-left-img-wrapper{
                 width: 100%;
                 img{
-                    width: 80%;
+                    width: 70%;
                 }
+            }
+            @include tablet{
+                display: none;
             }
         }
         .contact-right{
             display: flex;
             width: 55%;
+            font-size: 1.1rem;
+            @include tablet{
+                width: 100%;
+                font-size: 1rem;
+            }
             .f-1{
                 width: 50%;
                 display: flex;
@@ -46,7 +54,7 @@
             }
             .f-2{
                 width: 50%;
-                padding-left: 5rem;
+                padding-left: 2rem;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;

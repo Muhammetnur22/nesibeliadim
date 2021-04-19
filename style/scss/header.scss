@@ -41,15 +41,28 @@ header{
                 
             }
         }
-        ul{
+        .info{
             display: flex;
             @include tablet-mini{
-                display: none;
+                display: block;
+                width: 100%;
+                height: calc(100vh - 100px);
+                position: fixed;
+                right: 0;
+                bottom: 0px;
+                background-color: white;
             }
             li{
                 list-style: none;
                 margin-left: 60px;
                 font-size: 18px;
+
+                @include tablet-mini{
+                    display: block;
+                    padding: 3rem 0;
+                    text-align: center;
+                }
+
                 @include tablet{
                     font-size: 15px;
                 }
@@ -97,4 +110,6 @@ header{
             }
         }
     }
+    
+
 }
