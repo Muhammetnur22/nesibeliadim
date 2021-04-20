@@ -4,21 +4,39 @@
 // Services section
 #services{
     padding-top: 150px;
+    @include tablet{
+        padding-top: 100px;
+    }
+    @include mobile{
+        padding-top: 70px;
+    }    
     .services-text{
         margin-bottom: 40px;
         h1{
             color: $primaryColor;
             font-family: Avenir-Bold;
             font-size: 5vh;
+            @include tablet{
+                font-size: 30px;
+            }
+            @include mobile{
+                font-size: 24px;
+            }    
         }
     }
     .service-wrapper{
         width: 100%;
         display: flex;
         justify-content: space-between;
-
-        @include tablet{
-            display: block;
+        flex-wrap: wrap;
+        @include tablet-mini{
+            display: grid;
+            grid-template-columns: 1fr 1fr ;
+            gap: 10px;
+        }
+        @include mobile{
+            display: grid;
+            grid-template-columns: 1fr;
         }
         
         .service{
@@ -26,12 +44,22 @@
             flex-direction: column;
             align-items: flex-start;
             width: 230px;
+            @include mobile{
+                width: 100%;
+            }
 
             .service-title{
                 font-size: 1.5rem;
                 font-weight: bold;
                 min-height: 60px;
                 margin-bottom: 20px;
+
+                @include tablet{
+                    font-size: 20px;
+                }
+                @include mobile{
+                   font-size: 18px;
+                }
             }
 
             .img-wrapper{
@@ -41,11 +69,24 @@
             p{
                 min-height: 60px;
                 color: $fontSecond;
-                font-size: 1rem;
+                font-size: 1.2rem;
+            }
+            img{
+                @include tablet{
+                    width: auto;
+                    height: 70px;
+                }
+                @include mobile{
+                    width: auto;
+                    height: 50px;
+                }
             }
         }
         .l-service{
             justify-self: end;
+            @include  mobile{
+                justify-self: start;
+            }
         }
 
     }

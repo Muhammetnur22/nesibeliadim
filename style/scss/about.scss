@@ -2,18 +2,38 @@
 // About section
 #about{
     padding-top: 150px;
+    @include tablet{
+        padding-top: 100px;
+    }
+    @include mobile{
+        padding-top: 50px;
+    }
     .about-text{
         padding-bottom: 50px;
+
         .about-header{
             color: #487EE6;
             font-family: Avenir-bold;
             font-size: 5vh;
             padding-bottom: 30px;
+            @include tablet{
+                font-size: 30px;
+            }
+            @include mobile{
+                font-size: 24px;
+            }
             
         }
         p{
             color: $fontSecond;
             font-size: 24px;
+            @include tablet{
+                font-size: 18px;
+                line-height: 30px;
+            }
+            @include mobile{
+                font-size: 15px;
+            }
         }
         
     }

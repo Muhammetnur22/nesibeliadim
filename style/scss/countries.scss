@@ -2,25 +2,65 @@
 // Countries
 #countries{
     padding-top: 150px;
+    @include tablet{
+    padding-top: 100px;
+    }
+    @include mobile{
+        padding-top: 70px;
+    }    
     .countries-text{
         margin-bottom: 40px;
         h1{
             color: $primaryColor;
             font-family: Avenir-Bold;
             font-size: 5vh;
+            @include tablet{
+                font-size: 30px;
+                }
+                @include mobile{
+                    font-size: 24px;
+                }    
         }
     }
     .countries-wrapper{
+        width: 100%;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
+        @include tablet-mini{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        }
+        @include mobile{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
         .country{
             display: flex;
             flex-direction: column;
             align-items: center;
+            @include tablet{
+                padding-bottom: 20px;
+
+            }
             p{
                 color: $fontFirst;
                 font-weight: 800;
                 font-size: 1.3rem;
+                @include mobile{
+                    font-size: 1rem;
+                }
+            }
+            img{
+                @include tablet{
+                    width: 80px;
+                    height: 80px;
+                }
+                @include mobile{
+                    width: 60px;
+                    height: 60px;
+                }
             }
         }
     }

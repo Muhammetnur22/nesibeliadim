@@ -17,8 +17,7 @@
         font-weight: 500;
         display: flex;
         align-items: center;
-        font-size: 1.3rem;
-        
+        font-size: 1.3rem;        
         .contact-left{
             width: 45%;
             .contact-left-img-wrapper{
@@ -32,12 +31,17 @@
             }
         }
         .contact-right{
+            
             display: flex;
             width: 55%;
             font-size: 1.1rem;
             @include tablet{
                 width: 100%;
                 font-size: 1rem;
+            }
+            @include mobile{
+                display: grid;
+                grid-template-columns: 1fr;
             }
             .f-1{
                 width: 50%;

@@ -52,6 +52,12 @@
   margin-bottom: 50px;
 }
 
+@media (max-width: 870px) {
+  .landing .header .left h1 {
+    font-size: 6vh;
+  }
+}
+
 .landing .header .left p {
   font-size: 24px;
   color: #9FA0A4;
@@ -72,6 +78,7 @@
   .landing .header .right {
     margin-top: 3rem;
     width: 100%;
+    height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -87,7 +94,7 @@
 
 @media (max-width: 870px) {
   .landing .header .right .picture-handler {
-    width: 100%;
+    width: 70%;
     height: auto;
   }
 }
@@ -114,6 +121,18 @@
   position: absolute;
   bottom: 50px;
   height: 30px;
+}
+
+@media (max-width: 870px) {
+  .landing .down {
+    bottom: -50px;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing .down {
+    bottom: 0;
+  }
 }
 
 .landing .down img {

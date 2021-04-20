@@ -67,6 +67,15 @@
   }
 }
 
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
 #contacts .contact-wrapper .contact-right .f-1 {
   width: 50%;
   display: -webkit-box;

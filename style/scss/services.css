@@ -12,6 +12,18 @@
   padding-top: 150px;
 }
 
+@media (max-width: 870px) {
+  #services {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services {
+    padding-top: 70px;
+  }
+}
+
 #services .services-text {
   margin-bottom: 40px;
 }
@@ -22,6 +34,18 @@
   font-size: 5vh;
 }
 
+@media (max-width: 870px) {
+  #services .services-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services .services-text h1 {
+    font-size: 24px;
+  }
+}
+
 #services .service-wrapper {
   width: 100%;
   display: -webkit-box;
@@ -30,11 +54,26 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
-@media (max-width: 870px) {
+@media (max-width: 680px) {
   #services .service-wrapper {
-    display: block;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services .service-wrapper {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
@@ -52,11 +91,29 @@
   width: 230px;
 }
 
+@media (max-width: 425px) {
+  #services .service-wrapper .service {
+    width: 100%;
+  }
+}
+
 #services .service-wrapper .service .service-title {
   font-size: 1.5rem;
   font-weight: bold;
   min-height: 60px;
   margin-bottom: 20px;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .service .service-title {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services .service-wrapper .service .service-title {
+    font-size: 18px;
+  }
 }
 
 #services .service-wrapper .service .img-wrapper {
@@ -67,11 +124,32 @@
 #services .service-wrapper .service p {
   min-height: 60px;
   color: #9FA0A4;
-  font-size: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .service img {
+    width: auto;
+    height: 70px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services .service-wrapper .service img {
+    width: auto;
+    height: 50px;
+  }
 }
 
 #services .service-wrapper .l-service {
   -ms-grid-column-align: end;
       justify-self: end;
+}
+
+@media (max-width: 425px) {
+  #services .service-wrapper .l-service {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
 }
 /*# sourceMappingURL=services.css.map */

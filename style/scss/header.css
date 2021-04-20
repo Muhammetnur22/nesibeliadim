@@ -74,7 +74,7 @@ header nav .info {
 
 @media (max-width: 680px) {
   header nav .info {
-    display: block;
+    display: none;
     width: 100%;
     height: calc(100vh - 100px);
     position: fixed;

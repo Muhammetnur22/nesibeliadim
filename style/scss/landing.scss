@@ -6,6 +6,7 @@
     height: 100vh;
     min-height: 700px;
     position: relative;
+
     .header{
         display: flex;
         justify-content: space-between;
@@ -27,7 +28,9 @@
                 font-family: Avenir-Bold;
                 color: $fontFirst;
                 margin-bottom: 50px;
-               
+               @include tablet{
+                   font-size: 6vh;
+               }
             }
             p{
                 font-size: 24px;
@@ -43,14 +46,16 @@
             @include tablet{
                 margin-top: 3rem;
                 width: 100%;
+                height: auto;
                 display: flex;
                 justify-content: center;
             }
             .picture-handler{
                 height: 100%;
                 @include tablet{
-                    width: 100%;
+                    width: 70%;
                     height: auto;
+
                 }
                 img{
                     height: 100%;
@@ -70,9 +75,16 @@
         position: absolute;
         bottom: 50px;
         height: 30px;
+        @include tablet{
+            bottom: -50px;
+        }
+        @include mobile{
+            bottom: 0;
+        }
 
         img{
             animation: mover 1.5s infinite alternate;
+            
         }
     } 
 }
