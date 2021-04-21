@@ -7,6 +7,7 @@ let modal = document.getElementById('modal')
 
 hamburger.addEventListener('click',  () =>{
     infoSection.classList.toggle('info-active')
+    document.body.style.overflow = 'hidden'
     
 })
 
@@ -33,3 +34,11 @@ window.onscroll = () => {
         header.style.boxShadow = "none"
     }
 }
+
+infoSection.addEventListener('click', (e) => {
+    const className = e.target.className;
+    if(className !== 'hamburger'){
+        infoSection.classList.remove('info-active')
+        document.body.style.overflow = 'unset'
+    }   
+})
