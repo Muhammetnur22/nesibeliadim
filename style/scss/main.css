@@ -45,12 +45,6 @@ header nav {
   z-index: 1000;
 }
 
-@media (max-width: 680px) {
-  header nav {
-    padding: 10px;
-  }
-}
-
 header nav a.logo-handler {
   height: 70px;
 }
@@ -58,6 +52,12 @@ header nav a.logo-handler {
 @media (max-width: 870px) {
   header nav a.logo-handler {
     height: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  header nav a.logo-handler {
+    height: 40px;
   }
 }
 
@@ -84,11 +84,11 @@ header nav .info {
 
 @media (max-width: 680px) {
   header nav .info {
-    display: none;
+    display: block;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
     position: fixed;
-    right: 0;
+    right: -1000px;
     bottom: 0px;
     background-color: white;
   }
@@ -103,8 +103,9 @@ header nav .info li {
 @media (max-width: 680px) {
   header nav .info li {
     display: block;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -182,10 +183,21 @@ header nav .info .lang-dropdown .modal a::selection {
   background: none;
 }
 
+@media (max-width: 680px) {
+  header nav .info .lang-dropdown .modal {
+    position: absolute;
+    left: 250px;
+  }
+}
+
 header nav .info .lang-dropdown .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav .info-active {
+  right: 0;
 }
 
 @font-face {
@@ -202,6 +214,18 @@ header nav .info .lang-dropdown .active {
   height: 100vh;
   min-height: 700px;
   position: relative;
+}
+
+@media (max-width: 870px) {
+  .landing {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing {
+    height: 70vh;
+  }
 }
 
 .landing .header {
@@ -244,7 +268,13 @@ header nav .info .lang-dropdown .active {
 
 @media (max-width: 870px) {
   .landing .header .left h1 {
-    font-size: 6vh;
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing .header .left h1 {
+    font-size: 30px;
   }
 }
 
@@ -256,6 +286,12 @@ header nav .info .lang-dropdown .active {
 @media (max-width: 870px) {
   .landing .header .left p {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .landing .header .left p {
+    font-size: 1rem;
   }
 }
 
@@ -275,6 +311,12 @@ header nav .info .lang-dropdown .active {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 870px) and (max-width: 425px) {
+  .landing .header .right {
+    margin-top: 2.5rem;
   }
 }
 
@@ -315,13 +357,13 @@ header nav .info .lang-dropdown .active {
 
 @media (max-width: 870px) {
   .landing .down {
-    bottom: -50px;
+    bottom: -70px;
   }
 }
 
 @media (max-width: 425px) {
   .landing .down {
-    bottom: 0;
+    bottom: 25px;
   }
 }
 
@@ -648,7 +690,7 @@ header nav .info .lang-dropdown .active {
       flex-wrap: wrap;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 870px) {
   #services .service-wrapper {
     display: -ms-grid;
     display: grid;
@@ -679,6 +721,14 @@ header nav .info .lang-dropdown .active {
       -ms-flex-align: start;
           align-items: flex-start;
   width: 230px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .service {
+    margin-bottom: 15px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -697,12 +747,15 @@ header nav .info .lang-dropdown .active {
 @media (max-width: 870px) {
   #services .service-wrapper .service .service-title {
     font-size: 20px;
+    min-height: 40px;
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 425px) {
   #services .service-wrapper .service .service-title {
     font-size: 18px;
+    min-height: 20px;
   }
 }
 
@@ -711,10 +764,28 @@ header nav .info .lang-dropdown .active {
   margin-bottom: 20px;
 }
 
+@media (max-width: 870px) {
+  #services .service-wrapper .service .img-wrapper {
+    margin: 0;
+  }
+}
+
 #services .service-wrapper .service p {
   min-height: 60px;
   color: #9FA0A4;
   font-size: 1.2rem;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .service p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services .service-wrapper .service p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -736,10 +807,16 @@ header nav .info .lang-dropdown .active {
       justify-self: end;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 870px) {
   #services .service-wrapper .l-service {
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .l-service {
+    margin-bottom: 0;
   }
 }
 
@@ -757,14 +834,50 @@ header nav .info .lang-dropdown .active {
   padding-top: 150px;
 }
 
+@media (max-width: 870px) {
+  #contacts {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts {
+    padding-top: 50px;
+  }
+}
+
 #contacts .contacts-text {
   margin-bottom: 50px;
+}
+
+@media (max-width: 870px) {
+  #contacts .contacts-text {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contacts-text {
+    margin-bottom: 30px;
+  }
 }
 
 #contacts .contacts-text h1 {
   color: #487EE6;
   font-family: Avenir-Bold;
   font-size: 5vh;
+}
+
+@media (max-width: 870px) {
+  #contacts .contacts-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contacts-text h1 {
+    font-size: 24px;
+  }
 }
 
 #contacts .contact-wrapper {
@@ -835,12 +948,37 @@ header nav .info .lang-dropdown .active {
           justify-content: space-between;
 }
 
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .f-1 {
+    width: 100%;
+  }
+}
+
 #contacts .contact-wrapper .contact-right .f-1 .address {
   padding-bottom: 5rem;
 }
 
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .f-1 .address {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .f-1 .address {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 #contacts .contact-wrapper .contact-right .f-1 .mail {
   min-height: 60px;
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .f-1 .mail {
+    margin-bottom: 30px;
+  }
 }
 
 #contacts .contact-wrapper .contact-right .f-2 {
@@ -858,12 +996,67 @@ header nav .info .lang-dropdown .active {
           justify-content: space-between;
 }
 
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .f-2 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .f-2 {
+    padding-left: 0;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 #contacts .contact-wrapper .contact-right img {
   padding-bottom: 20px;
 }
 
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right img {
+    width: auto;
+    height: 50px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right img {
+    width: auto;
+    height: 40px;
+    padding-bottom: 10px;
+  }
+}
+
 #contacts .contact-wrapper .contact-right p {
   padding-bottom: 10px;
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .phone, #contacts .contact-wrapper .contact-right .skype {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .phone, #contacts .contact-wrapper .contact-right .skype {
+    margin-bottom: 20px;
+  }
 }
 
 footer {
@@ -874,6 +1067,18 @@ footer {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 120px 0 40px;
+}
+
+@media (max-width: 870px) {
+  footer {
+    margin: 80px 0 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  footer {
+    margin: 30px 0 30px;
+  }
 }
 
 footer .geekspace {
@@ -889,6 +1094,27 @@ footer .geekspace .footer-title {
   font-weight: 900;
   margin-right: 20px;
   font-size: 1rem;
+}
+
+@media (max-width: 425px) {
+  footer .geekspace .footer-title {
+    font-size: 12px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 870px) {
+  footer .geekspace img {
+    width: 60px;
+    height: auto;
+  }
+}
+
+@media (max-width: 425px) {
+  footer .geekspace img {
+    width: 50px;
+    height: auto;
+  }
 }
 
 * {

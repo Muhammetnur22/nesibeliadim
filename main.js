@@ -1,11 +1,15 @@
-let langDropdown = document.querySelector('.lang-dropdown')
-let modal = document.getElementById('modal')
 let header = document.querySelector('header')
 let hamburger = document.querySelector('.hamburger')
+let infoSection = document.querySelector('.info')
+
+let langDropdown = document.querySelector('.lang-dropdown')
+let modal = document.getElementById('modal')
 
 hamburger.addEventListener('click',  () =>{
-    console.log('2')
+    infoSection.classList.toggle('info-active')
+    
 })
+
 
 langDropdown.addEventListener('click', clicked)
 
@@ -16,6 +20,7 @@ function clicked() {
 
 window.addEventListener('click', (e) => {
     if(e.target.className !== 'chosen-lang') modal.classList.remove('active')
+    
 })
 
 window.onscroll = () => {

@@ -35,12 +35,6 @@ header nav {
   z-index: 1000;
 }
 
-@media (max-width: 680px) {
-  header nav {
-    padding: 10px;
-  }
-}
-
 header nav a.logo-handler {
   height: 70px;
 }
@@ -48,6 +42,12 @@ header nav a.logo-handler {
 @media (max-width: 870px) {
   header nav a.logo-handler {
     height: 50px;
+  }
+}
+
+@media (max-width: 680px) {
+  header nav a.logo-handler {
+    height: 40px;
   }
 }
 
@@ -74,11 +74,11 @@ header nav .info {
 
 @media (max-width: 680px) {
   header nav .info {
-    display: none;
+    display: block;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 60px);
     position: fixed;
-    right: 0;
+    right: -1000px;
     bottom: 0px;
     background-color: white;
   }
@@ -93,8 +93,9 @@ header nav .info li {
 @media (max-width: 680px) {
   header nav .info li {
     display: block;
-    padding: 3rem 0;
+    padding: 1.5rem 0;
     text-align: center;
+    margin-left: 0;
   }
 }
 
@@ -172,9 +173,20 @@ header nav .info .lang-dropdown .modal a::selection {
   background: none;
 }
 
+@media (max-width: 680px) {
+  header nav .info .lang-dropdown .modal {
+    position: absolute;
+    left: 250px;
+  }
+}
+
 header nav .info .lang-dropdown .active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+header nav .info-active {
+  right: 0;
 }
 /*# sourceMappingURL=header.css.map */

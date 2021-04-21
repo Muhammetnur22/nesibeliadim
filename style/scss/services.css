@@ -58,7 +58,7 @@
       flex-wrap: wrap;
 }
 
-@media (max-width: 680px) {
+@media (max-width: 870px) {
   #services .service-wrapper {
     display: -ms-grid;
     display: grid;
@@ -89,6 +89,14 @@
       -ms-flex-align: start;
           align-items: flex-start;
   width: 230px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .service {
+    margin-bottom: 15px;
+    width: 100%;
+  }
 }
 
 @media (max-width: 425px) {
@@ -107,12 +115,15 @@
 @media (max-width: 870px) {
   #services .service-wrapper .service .service-title {
     font-size: 20px;
+    min-height: 40px;
+    margin-bottom: 0;
   }
 }
 
 @media (max-width: 425px) {
   #services .service-wrapper .service .service-title {
     font-size: 18px;
+    min-height: 20px;
   }
 }
 
@@ -121,10 +132,28 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 870px) {
+  #services .service-wrapper .service .img-wrapper {
+    margin: 0;
+  }
+}
+
 #services .service-wrapper .service p {
   min-height: 60px;
   color: #9FA0A4;
   font-size: 1.2rem;
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .service p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  #services .service-wrapper .service p {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 870px) {
@@ -146,10 +175,16 @@
       justify-self: end;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 870px) {
   #services .service-wrapper .l-service {
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+}
+
+@media (max-width: 870px) {
+  #services .service-wrapper .l-service {
+    margin-bottom: 0;
   }
 }
 /*# sourceMappingURL=services.css.map */

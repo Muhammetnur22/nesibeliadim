@@ -6,7 +6,12 @@
     height: 100vh;
     min-height: 700px;
     position: relative;
-
+    @include tablet{
+        height: 80vh;
+    }
+    @include mobile{
+        height: 70vh;
+    }
     .header{
         display: flex;
         justify-content: space-between;
@@ -29,7 +34,10 @@
                 color: $fontFirst;
                 margin-bottom: 50px;
                @include tablet{
-                   font-size: 6vh;
+                   font-size: 40px;
+               }
+               @include mobile{
+                   font-size: 30px;
                }
             }
             p{
@@ -37,6 +45,9 @@
                 color: $fontSecond;
                 @include tablet{
                     font-size: 20px;
+                }
+                @include mobile{
+                    font-size: 1rem;
                 }
             }
         }
@@ -49,6 +60,9 @@
                 height: auto;
                 display: flex;
                 justify-content: center;
+                @include mobile{
+                    margin-top: 2.5rem;
+                }
             }
             .picture-handler{
                 height: 100%;
@@ -76,10 +90,10 @@
         bottom: 50px;
         height: 30px;
         @include tablet{
-            bottom: -50px;
+            bottom: -70px;
         }
         @include mobile{
-            bottom: 0;
+            bottom: 25px;
         }
 
         img{

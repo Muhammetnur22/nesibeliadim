@@ -12,14 +12,50 @@
   padding-top: 150px;
 }
 
+@media (max-width: 870px) {
+  #contacts {
+    padding-top: 100px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts {
+    padding-top: 50px;
+  }
+}
+
 #contacts .contacts-text {
   margin-bottom: 50px;
+}
+
+@media (max-width: 870px) {
+  #contacts .contacts-text {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contacts-text {
+    margin-bottom: 30px;
+  }
 }
 
 #contacts .contacts-text h1 {
   color: #487EE6;
   font-family: Avenir-Bold;
   font-size: 5vh;
+}
+
+@media (max-width: 870px) {
+  #contacts .contacts-text h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contacts-text h1 {
+    font-size: 24px;
+  }
 }
 
 #contacts .contact-wrapper {
@@ -90,12 +126,37 @@
           justify-content: space-between;
 }
 
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .f-1 {
+    width: 100%;
+  }
+}
+
 #contacts .contact-wrapper .contact-right .f-1 .address {
   padding-bottom: 5rem;
 }
 
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .f-1 .address {
+    padding-bottom: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .f-1 .address {
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 #contacts .contact-wrapper .contact-right .f-1 .mail {
   min-height: 60px;
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .f-1 .mail {
+    margin-bottom: 30px;
+  }
 }
 
 #contacts .contact-wrapper .contact-right .f-2 {
@@ -113,11 +174,66 @@
           justify-content: space-between;
 }
 
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .f-2 {
+    padding-bottom: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .f-2 {
+    padding-left: 0;
+    width: 100%;
+    padding-bottom: 0;
+    margin-bottom: 2rem;
+  }
+}
+
 #contacts .contact-wrapper .contact-right img {
   padding-bottom: 20px;
 }
 
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right img {
+    width: auto;
+    height: 50px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right img {
+    width: auto;
+    height: 40px;
+    padding-bottom: 10px;
+  }
+}
+
 #contacts .contact-wrapper .contact-right p {
   padding-bottom: 10px;
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 870px) {
+  #contacts .contact-wrapper .contact-right .phone, #contacts .contact-wrapper .contact-right .skype {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  #contacts .contact-wrapper .contact-right .phone, #contacts .contact-wrapper .contact-right .skype {
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=contacts.css.map */
