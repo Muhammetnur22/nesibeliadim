@@ -451,11 +451,11 @@ header nav .info-active {
   }
 }
 
-#about .about-text {
+#about .about-text-handler {
   padding-bottom: 50px;
 }
 
-#about .about-text .about-header {
+#about .about-text-handler .about-header {
   color: #487EE6;
   font-family: Avenir-bold;
   font-size: 5vh;
@@ -463,31 +463,31 @@ header nav .info-active {
 }
 
 @media (max-width: 870px) {
-  #about .about-text .about-header {
+  #about .about-text-handler .about-header {
     font-size: 30px;
   }
 }
 
 @media (max-width: 425px) {
-  #about .about-text .about-header {
+  #about .about-text-handler .about-header {
     font-size: 24px;
   }
 }
 
-#about .about-text p {
+#about .about-text-handler p {
   color: #9FA0A4;
   font-size: 24px;
 }
 
 @media (max-width: 870px) {
-  #about .about-text p {
+  #about .about-text-handler p {
     font-size: 18px;
     line-height: 30px;
   }
 }
 
 @media (max-width: 425px) {
-  #about .about-text p {
+  #about .about-text-handler p {
     font-size: 15px;
   }
 }

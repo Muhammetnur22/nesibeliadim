@@ -1,0 +1,105 @@
+{
+    "en" : {
+        "about-link" : "About",
+        "services-link" : "Services",
+        "contacts-link" : "Contacts",
+
+        "header-content" : "Logistics to all around Turkmenistan",
+        "header-text" : "With professional team you will receive professional service!",
+        
+        "about-text" : "Freight forwarding company IE \"Nesibeli Ädim\" is engaged in the organization of cargo transportation, customs clearance, cargo storage and transit services in the port of Turkmenbashi", 
+
+        "countries-content" : "Countries we work with",
+        "russia" : "Russia",
+        "turkey" : "Turkey",
+        "china" : "China",
+        "uae" : "UAE",
+        "iran" : "Iran",
+
+        "services-content" : "Services",
+        "cargo-content" : "Organization of cargo transportation",
+        "cargo-text" : "Optimized, safe and efficient way of transportation in territory of Turkmenistan",
+        "custom-content" : "Customs clearance",
+        "custom-text" : "With a well-organized work, a quick way to obtain the appropriate customs clearance",
+        "storage-content" : "Cargo storage",
+        "storage-text" : "Help with the safety of your goods in the territory of Turkmenistan",
+        "transit-content" : "Transit of goods",
+        "transit-text" : "Reliable service of escorting your cargo in transit",
+
+        "contacts-content" : "Contacts",
+        "address-text" : "\"Nesibeli Ädim\" Individual Enterprise, Turkmenistan, Ashgabat, Bagtyyarlyk etrap, Hero of Turkmenistan Atamurat Niyazov Avenue, 391 (Choganly)",
+        "post-text" : "Postal Code: 744000",
+
+        "geekspace-text" : "Powered by"
+    },
+    "tm" : {
+        
+        "about-link" : "Biz barada",
+        "services-link" : "Hyzmatlar",
+        "contacts-link" : "Habarlaşmak",
+
+        "header-content" : " Logistika bütin Türkmenistanda",
+        "header-text" : "Biziň tejribeli toparymyz bilen Siz ýokary hilli hyzmat gazanarsyňyz!",
+
+        "about-text" : "HK \"Nesibeli Ädim\" transport-ekspeditorçylyk kompaniýasy bolup ýükleri daşamagyň guramaçylyk işlerini, gümrük bilen bagly işleri, ýükleri saklamagyň we Türkmenbaşy portundan tranzit bilen bagly hyzmatlary amala aşyrýar.",     
+        
+        "countries-content" : "Hyzmatdaşlyk edýän ýurtlarymyz",
+        "russia" : "Russiýa Federasiýasy ",
+        "turkey" : "Türkiýe Respublikasy",
+        "china" : "Hytaý Halk Respublikasy",
+        "uae" : "BAE",
+        "iran" : "Eýran Yslam Respublikasy",
+
+        "services-content" : "Hyzmatlar",
+        "cargo-content" : "Ýükleri daşamak boýunça guramaçylyk işleri",
+        "cargo-text" : "Türkmenistanyň çäginde ygtybarly, howpsuz we ýönekeýleşdirilen usullar arkaly ýük daşamagyň hyzmatlary",
+        "custom-content" : "Gümrük bilen bagly işler",
+        "custom-text" : "Ýöriteleşdirilen işimiz bilen, gümrük bilen bagly ähli işleriň çalt usulda resmileşdirilmegi",
+        "storage-content" : "Ýükleri ammarlarda saklamak",
+        "storage-text" : "Türkmenistanyň çäginde Siziň ýüküňiziň goraglylygyny üpjün etmek",
+        "transit-content" : "Ýükleri tranzit geçirmek",
+        "transit-text" : "Tranzit bilen bagly ýükleri ygtybarly dolandyrmak işleri",
+
+        "contacts-content" : "Habarlaşmak üçin salgymyz",
+        "address-text" : " \"Nesibeli Ädim\" Hususy kärhanasy, Türkmenistan, Aşgabat şäheri, Bagtyýarlyk etraby, Türkmenistanyň Gahrymany Atamyrat Nyýazow şaýoly, 391 (Çoganly ýaşaýyş toplumy)",
+        "post-text" : "Poçta indeksi: 744000",
+
+        "geekspace-text" : "Geek Space tarapyndan taýýarlanyldy"
+    },
+    "ru" : {
+        "about-link" : "О нас",
+        "services-link" : "Услуги",
+        "contacts-link" : "Контакты",
+
+        "header-content" : "Логистика по всему Туркменистану",
+        "header-text" : "С профессиональной командой вы получите профессиональное обслуживание!",
+        
+        "about-text" : "Транспортно-экспедиторская компания ИП \"Nesibeli ädim\" занимается организацией перевозки грузов, таможенные оформления, хранения грузов и услуги по транзиту в порту Туркменбаши.", 
+
+        "countries-content" : "Сотрудничество в странах",
+        "russia" : "Россия",
+        "turkey" : "Турция",
+        "china" : "Китай",
+        "uae" : "ОАЭ",
+        "iran" : "Иран",
+
+        "services-content" : "Услуги",
+        "cargo-content" : "Организация перевозки грузов",
+        "cargo-text" : "Оптимизированный, безопасный и эффективный способ перевозки по территории Туркменистана",
+        "custom-content" : "Таможенные оформления",
+        "custom-text" : "С хорошо организованной работой, быстрый способ получения соответствующего разрешения по таможне",
+        "storage-content" : "Хранения грузов",
+        "storage-text" : "Помогаем с сохранностью вашего груза на территории Туркменистана",
+        "transit-content" : "Транзит грузов",
+        "transit-text" : "Надежная услуга сопровождения вашего груза транзитом",
+
+        "contacts-content" : "Контакты",
+        "address-text" : "Индивидуальное предприятие \"Nesibeli Ädim\", Туркменистан, г. Ашхабад, Багтыярлыкский этрап, проспект Героя Туркменистана Атамурата Ниязова, дом 391 (ж/к Чоганлы)",
+        "post-text" : "Почтовый индекс: 744000",
+
+        "geekspace-text" : "Разработан командой Geek Space"
+
+
+    }
+
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Nesibeli Ädim</title>
     <link rel="stylesheet" href="./style/scss/main.css">
     <link rel="import" href="content.json">
@@ -16,21 +17,21 @@
                 <img src="./img/nesibeli_adim.svg" alt="nesibeli-adim-logo" class="logo">
             </a>
             <ul class="info">
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contacts">Contacts</a></li>
+                <li><a href="#about" data-content id="about-link">About</a></li>
+                <li><a href="#services" data-content id="services-link">Services</a></li>
+                <li><a href="#contacts" data-content id="contacts-link">Contacts</a></li>
                 <!-- Lang dropdown -->
                 <li class="lang-dropdown">
                     <span class="chosen-lang">EN</span>
                     <div class="modal" id="modal">
-                        <a href="#">
-                            <span class="lang" id="EN">EN</span>
+                        <a class="lang-link" href="#eng">
+                            <span class="lang" id="en">EN</span>
                         </a>
-                        <a href="#">
-                            <span class="lang" id="EN">RU</span>
+                        <a class="lang-link" href="#ru">
+                            <span class="lang" id="ru">RU</span>
                         </a>
-                        <a href="#">
-                            <span class="lang" id="EN">TM</span>
+                        <a class="lang-link" href="#tm">
+                            <span class="lang" id="tm">TM</span>
                         </a>
                     </div>
                 </li>
@@ -51,8 +52,8 @@
             <!-- Header and truck picture -->
             <div class="header">
                 <div class="left">
-                    <h1>Logistics to all around Turkmenistan</h1>
-                    <p>With professional team you will receive professional service!</p>
+                    <h1 data-content id="header-content">Logistics to all around Turkmenistan</h1>
+                    <p data-content id="header-text">With professional team you will receive professional service!</p>
                 </div>
 
                 <div class="right">
@@ -77,9 +78,9 @@
 
         <!-- About section -->
         <div id="about" >
-            <div class="about-text">
+            <div class="about-text-handler">
                 <h1 class="about-header">Nesibeli Ädim</h1>
-                <p >Freight forwarding company IE "Nesibeli Ädim" is engaged in the organization of cargo transportation, customs clearance, cargo storage and transit services in the port of Turkmenbashi</p>
+                <p data-content id="about-text">Freight forwarding company IE "Nesibeli Ädim" is engaged in the organization of cargo transportation, customs clearance, cargo storage and transit services in the port of Turkmenbashi</p>
             </div>
             <div class="about-img-wrapper">
                 <div class="img">
@@ -91,39 +92,39 @@
         <!-- Countries section-->
         <div id="countries">
             <div class="countries-text">
-                <h1>Countries we work in</h1>
+                <h1 data-content id="countries-content">Countries we work in</h1>
             </div>
             <div class="countries-wrapper">
                 <div class="country">
                     <div class="flag">
                         <img src="./img/flag-russia.svg" alt="Russian flag">
                     </div>
-                    <p>Russia</p>
+                    <p data-content id="russia">Russia</p>
                 </div>
                 
                 <div class="country">
                     <div class="flag">
                         <img src="./img/flag-turkey.svg" alt="Turkish flag">
                     </div>
-                    <p>Turkey</p>
+                    <p data-content id="turkey">Turkey</p>
                 </div>
                 <div class="country">
                     <div class="flag">
                         <img src="./img/flag-china.svg" alt="Chinese flag">
                     </div>
-                    <p>China</p>
+                    <p data-content id="china">China</p>
                 </div>
                 <div class="country">
                     <div class="flag">
                         <img src="./img/flag-united-arab-emirates.svg" alt="UAE flag">
                     </div>
-                    <p>UAE</p>
+                    <p data-content id="uae">UAE</p>
                 </div>
                 <div class="country">
                     <div class="flag">
                         <img src="./img/flag-iran.svg" alt="Iran flag">
                     </div>
-                    <p>Iran</p>
+                    <p data-content id="iran">Iran</p>
                 </div>
                 
             </div>
@@ -133,41 +134,41 @@
         <!-- Services section -->
         <div id="services">
             <div class="services-text">
-                <h1>Services</h1>
+                <h1 data-content id="services-content">Services</h1>
             </div>
 
             <div class="service-wrapper">
                 <div class="service">
-                    <div class="service-title">Organization of cargo transportation</div>
+                    <div class="service-title" data-content id="cargo-content">Organization of cargo transportation</div>
                     <div class="img-wrapper">
                         <img src="./icon/shipping-fast.svg" alt="fast-shipping">
                     </div>
-                    <p>Optimized, safe and efficient way of transportation in territory of Turkmenistan </p>
+                    <p data-content id="cargo-text">Optimized, safe and efficient way of transportation in territory of Turkmenistan </p>
                 </div>
     
                 <div class="service">
                     
-                    <div class="service-title">Customs clearance</div>
+                    <div class="service-title" data-content id="custom-content">Customs clearance</div>
                     <div class="img-wrapper">
                         <img src="./icon/inbox-check.svg" alt="inbox-check">
                     </div>
-                    <p>With a well-organized work, a quick way to obtain the appropriate customs clearance </p>
+                    <p data-content id="custom-text">With a well-organized work, a quick way to obtain the appropriate customs clearance</p>
                 </div>
     
                 <div class="service">
-                    <div class="service-title">Cargo storage</div>
+                    <div class="service-title" data-content id="storage-content">Cargo storage</div>
                     <div class="img-wrapper">
                         <img src="./icon/storage.svg" alt="cargo-storage">
                     </div>
-                    <p>Help with the safety of your goods in the territory of Turkmenistan</p>
+                    <p data-content id="storage-text">Help with the safety of your goods in the territory of Turkmenistan</p>
                 </div>
 
                 <div class="service l-service">
-                    <div class="service-title">Transit of goods</div>
+                    <div class="service-title" data-content id="transit-content">Transit of goods</div>
                     <div class="img-wrapper">
                         <img src="./icon/shipping.svg" alt="shipping">
                     </div>
-                    <p>Reliable service of escorting your cargo in transit </p>
+                    <p data-content id="transit-text">Reliable service of escorting your cargo in transit </p>
                 </div>
             </div>
 
@@ -176,7 +177,7 @@
         <!-- Contacts section-->
         <div id="contacts">
             <div class="contacts-text">
-                <h1>Contacts</h1>
+                <h1 data-content id="contacts-content">Contacts</h1>
             </div>
 
             <div class="contact-wrapper">
@@ -190,7 +191,7 @@
                     <div class="f-1">
                         <div class="contact address">
                             <img src="./icon/location.svg" alt="location">
-                            <p>Turkmenistan, Ashgabat, Bagtyyarlyk etrap, Hero of Turkmenistan Atamurat Niyazov Avenue, 391 (Choganly)</p>
+                            <p data-content id="address-text">Turkmenistan, Ashgabat, Bagtyyarlyk etrap, Hero of Turkmenistan Atamurat Niyazov Avenue, 391 (Choganly)</p>
                         </div>
                         <div class="contact mail">
                             <img src="./icon/mail.svg" alt="mail">
@@ -214,7 +215,7 @@
     
                         <div class="contact post">
                             <img src="./icon/post.svg" alt="post">
-                            <p>Postal Code: 744000</p>
+                            <p data-content id="post-text">Postal Code: 744000</p>
                         </div>
                     </div>
                 </div>
@@ -225,11 +226,11 @@
     <!-- Footer section -->
     <footer>
         <div class="geekspace">
-            <div class="geekspace-text">
-                <div class="footer-title">Powered by</div>
+            <div class="geekspace-text-handler">
+                <div class="footer-title" data-content id="geekspace-text">Powered by</div>
             </div>
             <div class="geekspace-logo">
-                <a title="GeekSpace" href="https://#">
+                <a title="Geek Space" href="https://#" target="_blank">
                    <img src="/img/gs 1.svg" alt="geekspace">
                 </a>
             </div>
@@ -239,5 +240,6 @@
     <!-- Script  -->
     
     <script src="main.js"></script>
+    <script src="lang.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@ let header = document.querySelector('header')
 let hamburger = document.querySelector('.hamburger')
 let infoSection = document.querySelector('.info')
 
-let langDropdown = document.querySelector('.lang-dropdown')
+let langDropDown = document.querySelector('.lang-dropdown')
 let modal = document.getElementById('modal')
 
 // clickable button responsive
@@ -23,7 +23,7 @@ infoSection.addEventListener('click', (e) => {
 })
 
 // language dropdown
-langDropdown.addEventListener('click', clicked)
+langDropDown.addEventListener('click', clicked)
 
 function clicked() {
     modal.classList.toggle('active')
