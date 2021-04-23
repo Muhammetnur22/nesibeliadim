@@ -2,28 +2,49 @@ const langLinks = document.querySelectorAll('.lang-link');
 const contentNodes = document.querySelectorAll('[data-content]');
 const navLang = document.querySelector('.chosen-lang');
 
+// Get Contents
 async function getContents(){
     const res = await fetch('./content.json')
     const obj = await res.json();
     return obj
 }
 
-langLinks.forEach(a => {
-    a.addEventListener('click',async (e) => {
-        const chosenLang = a.children[0].innerText.toLowerCase();
-        const contents = await getContents();
+window.addEventListener('load', () => onClicklangLinks())
 
-        navLang.innerText = chosenLang.toUpperCase()
-
-        contentNodes.forEach(node => {
-            node.innerHTML = contents[chosenLang][node.id]
+// Onclick event Lang Links
+function onClicklangLinks() {
+    langLinks.forEach(a => {
+        a.addEventListener('click',async (e) => {
+            const chosenLang = a.children[0].innerText;
+    
+            // Set Local storage
+            setLangToLocalStorage(chosenLang.toUpperCase());
+    
+            return changeUiLanguage(chosenLang)
         })
-    })
-});
+    });
+}
 
-function getLangFromLocalStorage(){
-    
+async function changeUiLanguage(chosenLang) {
+    const contents = await getContents();
+    // Nav Lang Change
+    navLang.innerText = chosenLang.toUpperCase();
+    //  All Body Text
+    contentNodes.forEach(node => {
+        node.innerHTML = contents[chosenLang.toLowerCase()][node.id]
+    })
 }
-function setLangToLocalStorage(){
-    
+
+async function getLangFromLocalStorage(){
+    const lang = localStorage.getItem(`nesibeliAdimLang`);
+    if(lang){
+        return changeUiLanguage(lang)
+    }
+    else{
+        return changeUiLanguage('TM')
+    }
 }
+function setLangToLocalStorage(lang){
+    localStorage.setItem(`nesibeliAdimLang`, lang)
+}
+getLangFromLocalStorage()

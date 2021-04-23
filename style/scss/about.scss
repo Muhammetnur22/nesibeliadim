@@ -12,9 +12,9 @@
         padding-bottom: 50px;
 
         .about-header{
-            color: #487EE6;
+            color: $primaryColor;
             font-family: Avenir-bold;
-            font-size: 5vh;
+            font-size: 4.6vh;
             padding-bottom: 30px;
             @include tablet{
                 font-size: 30px;

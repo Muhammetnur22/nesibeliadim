@@ -458,7 +458,7 @@ header nav .info-active {
 #about .about-text-handler .about-header {
   color: #487EE6;
   font-family: Avenir-bold;
-  font-size: 5vh;
+  font-size: 4.6vh;
   padding-bottom: 30px;
 }
 
@@ -539,7 +539,7 @@ header nav .info-active {
 #countries .countries-text h1 {
   color: #487EE6;
   font-family: Avenir-Bold;
-  font-size: 5vh;
+  font-size: 4.6vh;
 }
 
 @media (max-width: 870px) {
@@ -663,7 +663,7 @@ header nav .info-active {
 #services .services-text h1 {
   color: #487EE6;
   font-family: Avenir-Bold;
-  font-size: 5vh;
+  font-size: 4.6vh;
 }
 
 @media (max-width: 870px) {
@@ -720,7 +720,7 @@ header nav .info-active {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 230px;
+  width: 245px;
   margin-bottom: 30px;
 }
 
@@ -738,7 +738,7 @@ header nav .info-active {
 }
 
 #services .service-wrapper .service .service-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: bold;
   min-height: 60px;
   margin-bottom: 20px;
@@ -865,7 +865,7 @@ header nav .info-active {
 #contacts .contacts-text h1 {
   color: #487EE6;
   font-family: Avenir-Bold;
-  font-size: 5vh;
+  font-size: 4.6vh;
 }
 
 @media (max-width: 870px) {
