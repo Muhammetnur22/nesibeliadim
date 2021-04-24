@@ -956,6 +956,7 @@ header nav .info-active {
 
 #contacts .contact-wrapper .contact-right .f-1 .address {
   padding-bottom: 5rem;
+  width: 100%;
 }
 
 @media (max-width: 870px) {
