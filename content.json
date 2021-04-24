@@ -32,6 +32,7 @@
 
         "geekspace-text" : "Powered by"
     },
+
     "tm" : {
         
         "about-link" : "Biz barada",
@@ -66,6 +67,7 @@
 
         "geekspace-text" : "Geek Space tarapyndan taýýarlanyldy"
     },
+
     "ru" : {
         "about-link" : "О нас",
         "services-link" : "Услуги",
@@ -98,7 +100,6 @@
         "post-text" : "Почтовый индекс: 744000",
 
         "geekspace-text" : "Разработан командой Geek Space"
-
 
     }
 
