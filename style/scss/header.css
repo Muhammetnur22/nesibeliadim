@@ -76,10 +76,12 @@ header nav .info {
   header nav .info {
     display: block;
     width: 100%;
-    height: calc(100vh - 60px);
+    height: 100vh;
     position: fixed;
-    right: -1000px;
-    bottom: 0px;
+    right: -100%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+    top: 72px;
     background-color: white;
   }
 }
@@ -93,7 +95,7 @@ header nav .info li {
 @media (max-width: 680px) {
   header nav .info li {
     display: block;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
     text-align: center;
     margin-left: 0;
   }

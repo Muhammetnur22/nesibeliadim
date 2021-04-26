@@ -1,5 +1,4 @@
 // Init
-
 let header = document.querySelector('header')
 let hamburger = document.querySelector('.hamburger')
 let infoSection = document.querySelector('.info')
@@ -7,11 +6,31 @@ let infoSection = document.querySelector('.info')
 let langDropDown = document.querySelector('.lang-dropdown')
 let modal = document.getElementById('modal')
 
+// Loading
+function loading(isLoading = true){
+    if(!isLoading){
+        document.querySelector('.loading')
+    }
+    else{
+        document.querySelector('.loading-block').style.display = 'flex'
+    }
+}
+
 // clickable button responsive
 hamburger.addEventListener('click',  () =>{
-    infoSection.classList.toggle('info-active')
-    document.body.style.overflow = 'hidden'
+    if(infoSection.classList.contains('info-active')){
+        infoSection.classList.remove('info-active')
+        document.body.style.overflow = 'unset'
+    }
+    else{
+        infoSection.classList.add('info-active')
+        document.body.style.overflow = 'hidden'
+    }
 })
+
+
+window.addEventListener('load', () => document.body.style.overflow = 'unset' )
+window.addEventListener('resize', () => document.body.style.overflow = 'unset' )
 
 infoSection.addEventListener('click', (e) => {
     const className = e.target.className;
@@ -45,4 +64,5 @@ window.onscroll = () => {
         header.style.boxShadow = "none"
     }
 }
+
 
