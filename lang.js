@@ -2,6 +2,16 @@ const langLinks = document.querySelectorAll('.lang-link');
 const contentNodes = document.querySelectorAll('[data-content]');
 const navLang = document.querySelector('.chosen-lang');
 
+// Loading
+function loading(isLoading = true){
+    if(!isLoading){
+        document.querySelector('.loading-block').style.display = 'none'
+    }
+    else{
+        document.querySelector('.loading-block').style.display = 'flex'
+    }
+}
+
 // Get Contents
 async function getContents(){
     const res = await fetch('./content.json')
@@ -10,6 +20,7 @@ async function getContents(){
 }
 
 window.addEventListener('load', () => onClicklangLinks())
+
 
 // Onclick event Lang Links
 function onClicklangLinks() {
@@ -21,6 +32,7 @@ function onClicklangLinks() {
             setLangToLocalStorage(chosenLang.toUpperCase());
     
             return changeUiLanguage(chosenLang)
+            
         })
     });
 }

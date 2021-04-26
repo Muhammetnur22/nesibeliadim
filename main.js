@@ -6,16 +6,6 @@ let infoSection = document.querySelector('.info')
 let langDropDown = document.querySelector('.lang-dropdown')
 let modal = document.getElementById('modal')
 
-// Loading
-function loading(isLoading = true){
-    if(!isLoading){
-        document.querySelector('.loading')
-    }
-    else{
-        document.querySelector('.loading-block').style.display = 'flex'
-    }
-}
-
 // clickable button responsive
 hamburger.addEventListener('click',  () =>{
     if(infoSection.classList.contains('info-active')){
@@ -29,7 +19,10 @@ hamburger.addEventListener('click',  () =>{
 })
 
 
-window.addEventListener('load', () => document.body.style.overflow = 'unset' )
+window.addEventListener('load', () => {
+    document.body.style.overflow = 'unset'
+    loading(false)
+} )
 window.addEventListener('resize', () => document.body.style.overflow = 'unset' )
 
 infoSection.addEventListener('click', (e) => {
