@@ -1138,6 +1138,10 @@ footer .geekspace .footer-title {
   background-color: white;
 }
 
+.loading-block img {
+  width: 100px;
+}
+
 * {
   margin: 0;
   padding: 0;
