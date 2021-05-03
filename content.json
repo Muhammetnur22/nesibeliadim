@@ -45,11 +45,11 @@
         "about-text" : "HK \"Nesibeli Ädim\" transport-ekspeditorçylyk kompaniýasy bolup ýükleri daşamagyň guramaçylyk işlerini, gümrük bilen bagly işleri, ýükleri saklamagyň we Türkmenbaşy portundan tranzit bilen bagly hyzmatlary amala aşyrýar.",     
         
         "countries-content" : "Hyzmatdaşlyk edýän ýurtlarymyz",
-        "russia" : "Russiýa Federasiýasy ",
-        "turkey" : "Türkiýe Respublikasy",
-        "china" : "Hytaý Halk Respublikasy",
+        "russia" : "Russiýa <br> Federasiýasy ",
+        "turkey" : "Türkiýe <br> Respublikasy",
+        "china" : "Hytaý Halk <br> Respublikasy",
         "uae" : "BAE",
-        "iran" : "Eýran Yslam Respublikasy",
+        "iran" : "Eýran Yslam <br> Respublikasy",
 
         "services-content" : "Hyzmatlar",
         "cargo-content" : "Ýükleri daşamak boýunça guramaçylyk işleri",

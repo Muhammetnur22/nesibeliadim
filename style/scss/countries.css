@@ -88,6 +88,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 @media (max-width: 870px) {
@@ -104,7 +105,8 @@
 
 @media (max-width: 425px) {
   #countries .countries-wrapper .country p {
-    font-size: 1rem;
+    font-size: 16px;
+    text-align: center;
   }
 }
 
